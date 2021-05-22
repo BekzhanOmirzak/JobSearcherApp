@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Final Profile Application 4</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="open_drawer">Open Drawer </string>
+</resources>

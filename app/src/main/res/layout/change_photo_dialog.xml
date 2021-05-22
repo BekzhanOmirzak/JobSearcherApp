@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Choose photo from storage"
+           android:layout_gravity="center_horizontal"
+           android:textSize="20sp"
+           android:id="@+id/txtChoosePhoto"
+           android:layout_margin="10dp"
+           />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:id="@+id/txtTakePhoto"
+        android:text="Take a photo" />
+
+
+</LinearLayout>

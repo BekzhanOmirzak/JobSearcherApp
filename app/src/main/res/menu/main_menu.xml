@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menuSearch"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="Іздеу" />
+
+        <item
+            android:id="@+id/menuMessages"
+            android:icon="@drawable/ic_baseline_message_24"
+            android:title="Хабарламалар" />
+
+        <item
+            android:id="@+id/menuProfile"
+            android:icon="@drawable/prifle_image"
+            android:title="Профильім " />
+
+        <item
+            android:id="@+id/menuAboutUs"
+            android:icon="@drawable/abous_us"
+            android:title="Біз туралы" />
+
+        <item
+            android:id="@+id/menuRateUs"
+            android:icon="@drawable/rate_us"
+            android:title="Баға беріңіз" />
+        <item
+            android:id="@+id/menuShare"
+            android:icon="@drawable/share"
+            android:title="Бөлісу" />
+
+    </group>
+
+</menu>
