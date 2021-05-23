@@ -1,20 +1,21 @@
 package com.example.profileapplication4.di
 
-import android.app.Application
-import com.example.profileapplication4.MainActivity
+import com.example.profileapplication4.di.mainactivitymodule.MainActivityViewModelModule
+import com.example.profileapplication4.ui.mainActivity.MainActivity
 import dagger.Module
-import dagger.Provides
 import dagger.android.ContributesAndroidInjector
 
 
 @Module
-public abstract class ActivityBuilderModule {
+abstract class ActivityBuilderModule {
 
 
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(
+        modules = [
+            MainActivityViewModelModule::class
+        ]
+    )
     abstract fun contributeMainActivity(): MainActivity
-
-
 
 
 }

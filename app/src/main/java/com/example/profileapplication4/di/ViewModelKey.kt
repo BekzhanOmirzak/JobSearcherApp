@@ -1,4 +1,4 @@
-package com.example.profileapplication4.di.viewmodelfactory
+package com.example.profileapplication4.di
 
 import androidx.lifecycle.ViewModel
 import dagger.MapKey

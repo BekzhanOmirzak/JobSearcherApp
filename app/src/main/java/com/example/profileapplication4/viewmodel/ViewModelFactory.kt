@@ -1,8 +1,7 @@
-package com.example.profileapplication4.di.viewmodelfactory
+package com.example.profileapplication4.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.profileapplication4.viewmodel.MainViewModel
 import javax.inject.Inject
 import javax.inject.Provider
 import javax.inject.Singleton

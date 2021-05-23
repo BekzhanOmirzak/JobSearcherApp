@@ -1,19 +1,19 @@
-package com.example.profileapplication4
+package com.example.profileapplication4.ui.mainActivity
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.lifecycle.ViewModelProvider
-import com.example.profileapplication4.di.viewmodelfactory.ViewModelFactory
+import com.example.profileapplication4.R
+import com.example.profileapplication4.viewmodel.ViewModelFactory
 import com.example.profileapplication4.view.LogInActivity
-import com.example.profileapplication4.viewmodel.MainViewModel
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 
 class MainActivity : DaggerAppCompatActivity() {
 
 
-    lateinit var mainViewModel: MainViewModel
+    lateinit var mainViewModel: MainActivityViewModel
 
 
     @Inject
@@ -27,7 +27,7 @@ class MainActivity : DaggerAppCompatActivity() {
             startActivity(Intent(this, LogInActivity::class.java))
         }
 
-        mainViewModel = ViewModelProvider(this, viewModelFactory)[MainViewModel::class.java]
+        mainViewModel = ViewModelProvider(this, viewModelFactory)[MainActivityViewModel::class.java]
 
         findViewById<Button>(R.id.btnStart).setText(mainViewModel.provideString())
 
