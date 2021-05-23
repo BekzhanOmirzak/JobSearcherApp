@@ -3,6 +3,7 @@ package com.example.profileapplication4.di
 import android.app.Application
 import com.example.profileapplication4.BaseApplication
 import com.example.profileapplication4.MainActivity
+import com.example.profileapplication4.viewmodel.viewmodelmodule.ViewModelModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -14,7 +15,8 @@ import javax.inject.Singleton
 @Component(
     modules = [AndroidSupportInjectionModule::class,
         AppModule::class,
-        ActivityBuilderModule::class]
+        ActivityBuilderModule::class,
+        ViewModelModule::class]
 )
 interface AppComponent : AndroidInjector<BaseApplication> {
 

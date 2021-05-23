@@ -9,6 +9,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.RequestManager
 import com.bumptech.glide.request.RequestOptions
 import com.example.profileapplication4.R
+import com.example.profileapplication4.Repository
 import dagger.Module
 import dagger.Provides
 
@@ -51,7 +52,11 @@ class AppModule {
         }
 
 
-
+        @Provides
+        @JvmStatic
+        fun provideRepository(): Repository {
+            return Repository()
+        }
 
 
     }
