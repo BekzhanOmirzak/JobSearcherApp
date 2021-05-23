@@ -2,7 +2,9 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'com.google.gms.google-services'
+
 }
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 30
@@ -34,6 +36,9 @@ android {
     buildFeatures {
         viewBinding true
     }
+    kapt {
+        generateStubs = true
+    }
 }
 
 dependencies {
@@ -60,13 +65,14 @@ dependencies {
 
 
     //Dependency injection Dagger
-    implementation 'com.google.dagger:dagger:2.34.1'
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.34.1'
+    def dagger_version="2.22"
+    implementation "com.google.dagger:dagger:$dagger_version"
+     kapt "com.google.dagger:dagger-compiler:$dagger_version"
     //dagger.android
-    implementation 'com.google.dagger:dagger-android:2.22'
-    implementation 'com.google.dagger:dagger-android-support:2.22' // if you use the support libraries
-    annotationProcessor 'com.google.dagger:dagger-android-processor:2.22'
-
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    // if you use the support libraries
+     kapt "com.google.dagger:dagger-android-processor:$dagger_version"
 
 
 
