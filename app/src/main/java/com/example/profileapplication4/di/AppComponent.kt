@@ -10,7 +10,7 @@ import dagger.android.support.AndroidSupportInjectionModule
 import javax.inject.Singleton
 
 
-@SomeRandomScope
+@Singleton
 @Component(
     modules = [AndroidSupportInjectionModule::class,
         AppModule::class,
