@@ -6,7 +6,7 @@ import android.widget.Button
 import androidx.lifecycle.ViewModelProvider
 import com.example.profileapplication4.R
 import com.example.profileapplication4.viewmodel.ViewModelFactory
-import com.example.profileapplication4.view.LogInActivity
+import com.example.profileapplication4.ui.loginActivity.LogInActivity
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 
@@ -29,7 +29,6 @@ class MainActivity : DaggerAppCompatActivity() {
 
         mainViewModel = ViewModelProvider(this, viewModelFactory)[MainActivityViewModel::class.java]
 
-        findViewById<Button>(R.id.btnStart).setText(mainViewModel.provideString())
 
     }
 }

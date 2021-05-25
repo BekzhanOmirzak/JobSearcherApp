@@ -2,6 +2,8 @@ package com.example.profileapplication4.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.example.profileapplication4.di.loginActivitymodule.LoginActivityModule
+import com.example.profileapplication4.ui.loginActivity.LoginActivityViewModel
 import com.example.profileapplication4.ui.mainActivity.MainActivityViewModel
 import com.example.profileapplication4.viewmodel.ViewModelFactory
 import dagger.Binds
@@ -20,6 +22,12 @@ abstract class ViewModelFactoryModule {
     @IntoMap
     @ViewModelKey(MainActivityViewModel::class)
     abstract fun bindMainActViewModel(viewModel: MainActivityViewModel): ViewModel
+
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(LoginActivityViewModel::class)
+    abstract fun bindLoginActivityViewModel(viewModel: LoginActivityViewModel): ViewModel
 
 
 }

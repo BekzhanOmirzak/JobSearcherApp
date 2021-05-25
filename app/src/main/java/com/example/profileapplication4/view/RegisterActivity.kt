@@ -11,6 +11,7 @@ import com.example.profileapplication4.R
 import com.example.profileapplication4.databinding.ActivityRegisterBinding
 import com.example.profileapplication4.models.Employee
 import com.example.profileapplication4.models.Employer
+import com.example.profileapplication4.ui.loginActivity.LogInActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 

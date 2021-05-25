@@ -20,7 +20,7 @@
         <activity android:name=".view.MyProfileActivity" />
         <activity android:name=".view.MessageActivity" />
         <activity android:name=".view.RegisterActivity" />
-        <activity android:name=".view.LogInActivity" />
+        <activity android:name=".ui.loginActivity.LogInActivity" />
         <activity android:name=".ui.mainActivity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
