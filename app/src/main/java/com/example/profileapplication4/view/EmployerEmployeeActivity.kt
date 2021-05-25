@@ -9,6 +9,7 @@ import com.example.profileapplication4.databinding.ActivityEmployerEmployeeBindi
 import com.example.profileapplication4.models.ChatRoom
 import com.example.profileapplication4.models.Employee
 import com.example.profileapplication4.models.Employer
+import com.example.profileapplication4.ui.messageActivity.MessageActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.FirebaseFirestore

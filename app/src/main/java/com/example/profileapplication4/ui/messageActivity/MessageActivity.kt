@@ -1,8 +1,7 @@
-package com.example.profileapplication4.view
+package com.example.profileapplication4.ui.messageActivity
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
 import android.widget.ImageView
 import android.widget.TextView
@@ -16,6 +15,8 @@ import com.example.profileapplication4.databinding.ActivityMessageBinding
 import com.example.profileapplication4.models.ChatRoom
 import com.example.profileapplication4.models.Employee
 import com.example.profileapplication4.models.Employer
+import com.example.profileapplication4.view.MyProfileActivity
+import com.example.profileapplication4.view.SearchActivity
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot

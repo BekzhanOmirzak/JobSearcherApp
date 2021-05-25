@@ -18,8 +18,8 @@
         <activity android:name=".view.EmployerEmployeeActivity" />
         <activity android:name=".view.SearchActivity" />
         <activity android:name=".view.MyProfileActivity" />
-        <activity android:name=".view.MessageActivity" />
-        <activity android:name=".view.RegisterActivity" />
+        <activity android:name=".ui.messageActivity.MessageActivity" />
+        <activity android:name=".ui.registerActivity.RegisterActivity" />
         <activity android:name=".ui.loginActivity.LogInActivity" />
         <activity android:name=".ui.mainActivity.MainActivity">
             <intent-filter>

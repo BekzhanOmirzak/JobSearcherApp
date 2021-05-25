@@ -5,13 +5,11 @@ import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.profileapplication4.databinding.ActivityLogInBinding
-import com.example.profileapplication4.view.MessageActivity
-import com.example.profileapplication4.view.RegisterActivity
+import com.example.profileapplication4.ui.messageActivity.MessageActivity
+import com.example.profileapplication4.ui.registerActivity.RegisterActivity
 import com.example.profileapplication4.viewmodel.ViewModelFactory
-import com.google.firebase.auth.FirebaseAuth
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 
